@@ -1,5 +1,5 @@
 {
-  "name": "ngx-mask",
+  "name": "@kwsoft/ngx-mask",
   "version": "14.2.3",
   "description": "awesome ngx mask",
   "license": "MIT",
@@ -24,6 +24,7 @@
     "ng": "ng",
     "build": "ng build showcase --configuration production",
     "build:lib": "ng build --configuration production ngx-mask-lib && npm run copy-libdocs",
+    "build:watch": "ng build --watch --project ngx-mask-lib",
     "ci": "npm run lint && npm run build:lib && npm run test:all && npm run build",
     "copy-libdocs": "copyfiles -V -E README.md LICENSE dist/ngx-mask-lib",
     "fix:prettier": "prettier --write \"./**/*.{js,json,md,ts,html,scss}\"",
@@ -48,11 +49,12 @@
     "version:major": "npm --no-git-tag-version version major && cd projects/ngx-mask-lib && npm --no-git-tag-version version major",
     "version:minor": "npm --no-git-tag-version version minor && cd projects/ngx-mask-lib && npm --no-git-tag-version version minor",
     "version:patch": "npm --no-git-tag-version version patch && cd projects/ngx-mask-lib && npm --no-git-tag-version version patch",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "link": "cd ./dist/ngx-mask-lib && npm link --no-package-lock"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JsDaddy/ngx-mask.git"
+    "url": "https://github.com/kwsoft/ngx-mask.git"
   },
   "dependencies": {
     "@angular/animations": "14.2.1",
