@@ -36,8 +36,8 @@ At the moment there is no CICD build setup. Therefore, to build and publish the 
 - Verify `npm run test`, `npm run lint` run successfully
 - Verify demo application at `npm start` starts and works
 - Adapt the version in the `package.json` files
-- Build the library: `ng build --prod --project ng-bootstrap-form-validation`
-- Go to the `dist` folder: `cd .\dist\ng-bootstrap-form-validation\`
+- Build the library: `ng build --prod --project nxg-mask`
+- Go to the `dist` folder: `cd .\dist\nxg-mask\`
 - Run `npm publish --access public` (use your `AD` credentials)
 
 ## Installing
