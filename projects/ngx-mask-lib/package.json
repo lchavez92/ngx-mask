@@ -32,5 +32,8 @@
     "@angular/core": ">=10.0.0",
     "@angular/forms": ">=10.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "publishConfig": {
+    "registry": "http://npm.kwsoft.local/"
+  }
 }
