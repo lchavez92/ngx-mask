@@ -1,5 +1,5 @@
 {
-  "name": "ngx-mask",
+  "name": "@kwsoft/ngx-mask",
   "version": "13.1.15",
   "description": "awesome ngx mask",
   "keywords": [
@@ -19,13 +19,13 @@
   "contributors": [
     "ngx-mask"
   ],
-  "homepage": "https://github.com/JsDaddy/ngx-mask",
+  "homepage": "https://github.com/kwsoft/ngx-mask",
   "repository": {
     "type": "git",
-    "url": "git@github.com:JsDaddy/ngx-mask.git"
+    "url": "git@github.com:kwsoft/ngx-mask.git"
   },
   "bugs": {
-    "url": "https://github.com/JsDaddy/ngx-mask/issues"
+    "url": "https://github.com/kwsoft/ngx-mask/issues"
   },
   "main": "./bundles/ngx-mask.umd.js",
   "module": "./esm5/ngx-mask.js",
@@ -36,5 +36,8 @@
     "@angular/core": ">=10.0.0",
     "@angular/forms": ">=10.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "publishConfig": {
+    "registry": "http://npm.kwsoft.local/"
+  }
 }

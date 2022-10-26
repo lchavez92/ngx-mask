@@ -17,6 +17,29 @@ You can also try our [NGX COPYPASTE](https://www.npmjs.com/package/ngx-copypaste
 
 ### You can see the full [documentation](https://jsdaddy.github.io/ngx-mask-page/) with examples
 
+## Kwsoft Fork
+
+This repository is only for internal usage at <https://kwsoft.ch> and not published to the public npm registry!
+
+The repository is forked from [JSDaddy/ngx-mask](https://github.com/JSDaddy/ngx-mask).
+
+The fork:
+
+- fixes bugs:
+  - hopefully fixes issues [1009](https://github.com/JsDaddy/ngx-mask/issues/1009) / [1015](https://github.com/JsDaddy/ngx-mask/issues/1015) for angular 13 by backporting [fix commit from original repo](https://github.com/JsDaddy/ngx-mask/commit/e8151890e4e41843ffc030fbc4d512aef1d0c551) into our [v13-hotfix](https://github.com/kwsoft/ngx-mask/tree/v13-hotfix) branch
+- configures the kwsoft npm registry
+
+### Build and Publish
+
+At the moment there is no CICD build setup. Therefore, to build and publish the library to the internal @kwsoft registry follow these steps:
+
+- Verify `npm run test`, `npm run lint` run successfully
+- Verify demo application at `npm start` starts and works
+- Adapt the version in the `package.json` files
+- Build the library: `ng build --prod --project ng-bootstrap-form-validation`
+- Go to the `dist` folder: `cd .\dist\ng-bootstrap-form-validation\`
+- Run `npm publish --access public` (use your `AD` credentials)
+
 ## Installing
 
 ```bash
